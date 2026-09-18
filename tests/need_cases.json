@@ -1,0 +1,22 @@
+[
+  {"id":"N01","text":"每天坐地铁，最怕车厢里的噪音。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["commute"],"expected_aspects":["noise_cancellation"],"expected_constraints":[]},
+  {"id":"N02","text":"上班经常开视频会议，希望对方能听清。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["meeting"],"expected_aspects":["call_quality"],"expected_constraints":["clear_calls_required"]},
+  {"id":"N03","text":"跑步时使用，佩戴要稳固。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["exercise"],"expected_aspects":["comfort"],"expected_constraints":[]},
+  {"id":"N04","text":"需要全天佩戴，也比较关心续航。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["long_wear"],"expected_aspects":["comfort","battery"],"expected_constraints":[]},
+  {"id":"N05","text":"最怕耳机掉线，连接必须稳定。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["general"],"expected_aspects":["connection"],"expected_constraints":["no_frequent_disconnect"]},
+  {"id":"N06","text":"每天通勤一小时，还要用耳机开会，不能频繁断连。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["commute","meeting"],"expected_aspects":["call_quality","connection"],"expected_constraints":["no_frequent_disconnect"]},
+  {"id":"N07","text":"坐飞机时希望环境安静一些，降噪最重要。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["commute"],"expected_aspects":["noise_cancellation"],"expected_constraints":[]},
+  {"id":"N08","text":"健身时用，蓝牙连接别断。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["exercise"],"expected_aspects":["connection"],"expected_constraints":["no_frequent_disconnect"]},
+  {"id":"N09","text":"主要听音乐，喜欢有力度的低音。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["general"],"expected_aspects":["sound_quality"],"expected_constraints":[]},
+  {"id":"N10","text":"电量要耐用，不能频繁充电。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["general"],"expected_aspects":["battery"],"expected_constraints":["battery_for_full_day"]},
+  {"id":"N11","text":"长时间佩戴不能压耳。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["long_wear"],"expected_aspects":["comfort"],"expected_constraints":["comfortable_for_long_wear"]},
+  {"id":"N12","text":"我会在街上打电话，对方必须听得清楚。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["meeting"],"expected_aspects":["call_quality"],"expected_constraints":["clear_calls_required"]},
+  {"id":"N13","text":"办公室空调声很吵，希望能安静专注。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["general"],"expected_aspects":["noise_cancellation"],"expected_constraints":[]},
+  {"id":"N14","text":"上网课需要麦克风收音清楚。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["meeting"],"expected_aspects":["call_quality"],"expected_constraints":[]},
+  {"id":"N15","text":"骑行时佩戴，要稳固但不能压耳。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["exercise"],"expected_aspects":["comfort"],"expected_constraints":["comfortable_for_long_wear"]},
+  {"id":"N16","text":"经常在手机和电脑之间切换，连接稳定更重要。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["general"],"expected_aspects":["connection"],"expected_constraints":[]},
+  {"id":"N17","text":"火车上听播客，希望人声清楚也不要太吵。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["commute"],"expected_aspects":["noise_cancellation","sound_quality"],"expected_constraints":[]},
+  {"id":"N18","text":"日常主要听音乐。","selected_scenes":[],"selected_aspects":[],"expected_scenes":["general"],"expected_aspects":["sound_quality"],"expected_constraints":[]},
+  {"id":"N19","text":"","selected_scenes":["commute"],"selected_aspects":[],"expected_scenes":["commute"],"expected_aspects":["noise_cancellation","connection"],"expected_constraints":[]},
+  {"id":"N20","text":"","selected_scenes":["meeting"],"selected_aspects":["call_quality"],"expected_scenes":["meeting"],"expected_aspects":["call_quality"],"expected_constraints":[]}
+]

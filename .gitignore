@@ -1,5 +1,31 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local and regenerable data
+data/raw/
+data/work/
+data/processed/
+data/*.npy
+data/*.sqlite*
+*.jsonl.gz
+*.parquet
+
+# Local logs and editor files
+*.log
 .DS_Store
 Thumbs.db
+.idea/
+.vscode/
 desktop.ini
 *.zip
 tmp/

@@ -3,23 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="听荐 AI 耳机评论决策助手概念原型 v0.1.1" />
-  <title>听荐 AI 评论决策助手 v0.1.1</title>
+  <meta name="description" content="听荐 AI 耳机评论决策助手可运行 Demo" />
+  <title>听荐 AI 评论决策助手 Demo</title>
   <link rel="stylesheet" href="app.css" />
+  <link rel="stylesheet" href="app-v2.css" />
 </head>
 <body>
   <div class="stage">
     <section class="intro">
       <div class="mark"><span class="dot"></span> 听荐 AI 评论决策助手</div>
       <h1>用与你相关的评论证据回答问题</h1>
-      <p>先确认AI如何理解你的场景，再查看正反证据、缺失信息与商品比较。当前版本为可用性测试原型。</p>
-      <div class="note">个人概念设计 · v0.1.1 · 非真实电商产品</div>
+      <p>先确认AI如何理解你的场景，再查看正反证据、缺失信息与商品比较。系统会明确区分实时AI结果与缓存演示。</p>
+      <div class="note">个人概念设计 · AI Demo v0.2 · 非真实电商产品</div>
     </section>
     <main class="phone" aria-label="听荐手机端原型">
       <div class="status"><span>9:41</span><span>● ● ▰</span></div>
       <div class="app" id="app" aria-live="polite"></div>
     </main>
   </div>
-  <script src="app.js"></script>
+  <script src="config.js"></script>
+  <script src="api.js"></script>
+  <script src="app-v2.js"></script>
 </body>
 </html>

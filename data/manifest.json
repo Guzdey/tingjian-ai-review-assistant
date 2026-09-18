@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "tingjian-public-demo-fixture",
+  "data_class": "synthetic_demo_cache",
+  "is_synthetic": true,
+  "redistributable": true,
+  "disclaimer_zh": "本目录中的演示证据均为人工编写的合成占位数据，不来自真实用户评论，不代表任何真实商品表现。",
+  "products": [
+    "demo-tws-a",
+    "demo-tws-b"
+  ],
+  "aspects": [
+    "noise_cancellation",
+    "call_quality",
+    "connection",
+    "comfort",
+    "battery",
+    "sound_quality"
+  ],
+  "files": [
+    {
+      "path": "demo_derived.json",
+      "format": "json",
+      "product_count": 2,
+      "evidence_count": 36,
+      "evidence_per_product": 18,
+      "evidence_per_product_aspect": 3,
+      "source_kind": "demo_cache"
+    }
+  ],
+  "excluded_from_repository": [
+    "raw source archives",
+    "full review exports",
+    "reviewer identifiers",
+    "private parent_asin mappings",
+    "embeddings",
+    "model response caches"
+  ]
+}

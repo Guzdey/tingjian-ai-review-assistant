@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "dataset": {
+    "name": "Amazon Reviews 2023",
+    "reviews_path": "D:\\CodexData\\tingjian-ai\\raw\\reviews.jsonl",
+    "metadata_path": "D:\\CodexData\\tingjian-ai\\raw\\meta.jsonl",
+    "historical_data_notice": "Record the chosen release and its coverage cutoff before publishing derived findings."
+  },
+  "products": [
+    {
+      "product_id": "demo-tws-a",
+      "display_name": "样本耳机 A",
+      "parent_asin": "REPLACE_WITH_PRIVATE_PARENT_ASIN_A"
+    },
+    {
+      "product_id": "demo-tws-b",
+      "display_name": "样本耳机 B",
+      "parent_asin": "REPLACE_WITH_PRIVATE_PARENT_ASIN_B"
+    }
+  ],
+  "selection_rules": {
+    "product_type": "true_wireless_earphones",
+    "minimum_reviews_per_product": 300,
+    "maximum_sampled_reviews_per_product": 800,
+    "manual_checks_required": [
+      "true-wireless earphone rather than an accessory",
+      "metadata and reviews resolve to the same parent_asin",
+      "both products have comparable positioning",
+      "review text has usable language and information density",
+      "publication plan follows the source's current terms"
+    ]
+  },
+  "privacy": {
+    "exclude_reviewer_identifiers": true,
+    "publish_full_raw_reviews": false,
+    "keep_parent_asin_mapping_private": true
+  }
+}
