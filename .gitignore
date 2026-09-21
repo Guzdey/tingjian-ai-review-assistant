@@ -29,3 +29,6 @@ Thumbs.db
 desktop.ini
 *.zip
 tmp/
+
+# Survey exports with platform metadata
+research/private/

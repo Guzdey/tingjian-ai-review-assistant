@@ -1,0 +1,6 @@
+﻿participant_id,test_date,device,task_order,baseline_seconds,tingjian_seconds,completed_without_help,understood_fit_vs_evidence,opened_original_evidence,completed_comparison,decision,confidence_1_to_5,prompt_needed,issue_severity,key_observation,verbatim_short_quote,iteration_decision
+U01,,,,,,,,,,,,,,,,
+U02,,,,,,,,,,,,,,,,
+U03,,,,,,,,,,,,,,,,
+U04,,,,,,,,,,,,,,,,
+U05,,,,,,,,,,,,,,,,

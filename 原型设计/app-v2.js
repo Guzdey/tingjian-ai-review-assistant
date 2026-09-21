@@ -5,12 +5,12 @@ const sceneOptions=[
   {code:'long_wear',label:'长时间佩戴'},
 ];
 const aspectOptions=[
-  {code:'noise_cancellation',label:'降噪'},
-  {code:'call_quality',label:'通话清晰'},
-  {code:'connection',label:'连接稳定'},
   {code:'comfort',label:'舒适度'},
   {code:'battery',label:'续航'},
   {code:'sound_quality',label:'音质'},
+  {code:'noise_cancellation',label:'降噪'},
+  {code:'call_quality',label:'通话清晰'},
+  {code:'connection',label:'连接稳定'},
 ];
 const sceneLabels=Object.fromEntries([...sceneOptions,{code:'general',label:'日常使用'}].map(item=>[item.code,item.label]));
 const aspectLabels=Object.fromEntries(aspectOptions.map(item=>[item.code,item.label]));
@@ -75,9 +75,9 @@ function chipButtons(group,options){
   return options.map(item=>`<button class="chip ${state[group].has(item.code)?'active':''}" aria-pressed="${state[group].has(item.code)}" onclick="toggleSelection('${group}','${item.code}')">${item.label}</button>`).join('');
 }
 
-screens.product=()=>`${navTop('product')}<div class="hero"></div><section class="content"><div class="eyebrow">匿名商品样本 · DEMO TWS A</div><h1 class="title">样本耳机 A</h1><p class="sub">首版只比较两款匿名样本。报告会分别标明模型来源与数据来源：真实评论派生、演示缓存或前端离线降级。</p>${servicePill()}<div class="rating">证据式分析 <b>保留正反观点与信息缺口</b></div><div class="price">¥ -- <small>研究型Demo不展示实时价格</small></div><div class="ai-entry"><div><h3>AI帮我判断</h3><p>按你的使用场景检索评论证据</p></div><button class="round" aria-label="进入AI判断" onclick="go('needs')">›</button></div><button class="text-link" onclick="go('baseline')">进入普通评论基线任务 ›</button></section><nav class="bottom-nav"><b>商品</b><span>评价</span><span>参数</span><span>收藏</span></nav>`;
+screens.product=()=>`${navTop('product')}<div class="hero"></div><section class="content"><div class="eyebrow">匿名商品样本 · DEMO TWS A</div><h1 class="title">样本耳机 A</h1><p class="sub">首版只比较两款匿名样本。报告会分别标明模型来源与数据来源：真实评论派生、演示缓存或前端离线降级。</p>${servicePill()}<div class="rating">证据式分析 <b>保留正反观点与信息缺口</b></div><div class="price">¥ -- <small>研究型Demo不展示实时价格</small></div><div class="ai-entry"><div><h3>AI帮我判断</h3><p>从与你需求相关的评论中找证据</p></div><button class="round" aria-label="进入AI判断" onclick="go('needs')">›</button></div><button class="text-link" onclick="go('baseline')">进入普通评论基线任务 ›</button></section><nav class="bottom-nav"><b>商品</b><span>评价</span><span>参数</span><span>收藏</span></nav>`;
 
-screens.needs=()=>`${navTop('product')}<section class="content"><div class="eyebrow">01 使用需求</div><h1 class="section-title">你准备怎么使用这副耳机</h1><p class="section-copy">场景会改变证据排序。系统先解析需求，由你确认后才开始分析。</p><div class="label">主要场景</div><div class="chips">${chipButtons('scenes',sceneOptions)}</div><div class="label">最看重什么</div><div class="chips">${chipButtons('aspects',aspectOptions)}</div><div class="label">补充一句</div><textarea class="input" maxlength="300" oninput="state.freeText=this.value" aria-label="补充使用需求">${escapeHtml(state.freeText)}</textarea><p class="hint">最多300字。请不要填写姓名、电话或账号。</p>${state.request.error?`<div class="request-error">${escapeHtml(state.request.error)}</div>`:''}</section><button class="cta" ${state.request.busy?'disabled':''} onclick="prepareConfirmation()">${state.request.busy?'正在理解需求…':'检查AI理解'}</button>`;
+screens.needs=()=>`${navTop('product')}<section class="content"><div class="eyebrow">01 使用需求</div><h1 class="section-title">你准备怎么使用这副耳机</h1><p class="section-copy">场景会改变证据排序。系统先解析需求，由你确认后才开始分析。</p><div class="label">主要场景</div><div class="chips">${chipButtons('scenes',sceneOptions)}</div><div class="label">最看重什么</div><div class="chips">${chipButtons('aspects',aspectOptions)}</div><p class="hint">建议优先选择 3–4 项，报告会先展示与你最相关的证据。</p><div class="label">补充一句</div><textarea class="input" maxlength="300" oninput="state.freeText=this.value" aria-label="补充使用需求">${escapeHtml(state.freeText)}</textarea><p class="hint">最多300字。请不要填写姓名、电话或账号。</p>${state.request.error?`<div class="request-error">${escapeHtml(state.request.error)}</div>`:''}</section><button class="cta" ${state.request.busy?'disabled':''} onclick="prepareConfirmation()">${state.request.busy?'正在理解需求…':'检查AI理解'}</button>`;
 
 screens.confirm=()=>{
   const need=currentNeed();

@@ -1,0 +1,4 @@
+# Treat packaged deliverables as binary files.
+*.pdf binary
+*.docx binary
+*.xlsx binary
